@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://moonlightwarrior.github.io/CVblog/sitemap.xml
