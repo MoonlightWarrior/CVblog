@@ -11,7 +11,7 @@ profile:
   more_info:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a second-year undergraduate student in Computer Science and Mathematical Sciences at KAIST. I'm willing to pursue my Bachelor's in CS at KAIST around 2030. My research interests include:
+I am a second-year undergraduate student in Computer Science and Mathematical Sciences at KAIST. I'm planning to complete my Bachelor's in CS at KAIST around 2030. My research interests include:
 
 <br>
 • ML/AI mathematical theory  

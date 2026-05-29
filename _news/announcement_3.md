@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Blog was built.
+Launched my personal academic homepage. 🎉
