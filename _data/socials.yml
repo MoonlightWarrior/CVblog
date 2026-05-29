@@ -12,7 +12,7 @@
 cv_pdf: /assets/pdf/cv.pdf # path to your CV PDF file
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
-email: david.dabisu@gmail.com # your email address
+email: moonlightkim@kaist.ac.kr # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 github_username: MoonlightWarrior # your GitHub user name
@@ -26,7 +26,7 @@ github_username: MoonlightWarrior # your GitHub user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-# linkedin_username: # your LinkedIn user name
+linkedin_username: kangmin-kim-71401431a # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID

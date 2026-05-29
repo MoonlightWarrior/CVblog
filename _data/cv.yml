@@ -1,0 +1,133 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Kangmin Kim (김강민)
+    - name: Location
+      value: Daejeon, Republic of Korea
+    - name: Email
+      value: moonlightkim@kaist.ac.kr
+    - name: Languages
+      value: "Korean (Native), English (TOEFL 112/120, TOEIC 940/990)"
+
+- title: Profile
+  type: list
+  contents:
+    - I am a third-year undergraduate student in Computer Science and Mathematical Sciences at KAIST, planning to complete my Bachelor's in CS at KAIST around 2030. My research interests include ML/AI mathematical theory, optimization, sparse recovery, explainable AI, and statistics.
+
+- title: Education
+  type: time_table
+  contents:
+    - title: B.Sc. in Computing Sciences (Double Major in Mathematical Sciences)
+      institution: Korea Advanced Institute of Science and Technology (KAIST)
+      location: Daejeon, KR
+      year: 2025 - Present
+      description:
+        - "Total GPA: 4.15"
+        - Tuition and stipend fully covered by the National Science and Engineering Excellence Scholarship.
+        - Military service planned around 2028 (may be later).
+    - title: Exchange Student Program
+      institution: University of California, Berkeley
+      location: Berkeley, CA
+      year: Jun - Aug 2025
+      description:
+        - Summer visiting student; coursework in Computer Security (CS161) and Internet Architecture (CS168).
+        - Tuition and stipend fully covered by the KAIST Presidential Fellowship.
+    - title: High School
+      institution: Korean Science Academy (KSA)
+      location: Busan, KR
+      year: 2022 - 2025
+      description:
+        - Science High School for Gifted Students.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: "Individual Study: Dictionary Recovery via Autoencoders based on Sparsity"
+      institution: Undergraduate Student @ KAIST
+      location: Daejeon, KR
+      year: Dec 2025 - Mar 2026
+      description:
+        - Advised by Prof. Wooseok Ha (Dept. of Mathematical Sciences, KAIST).
+        - Theoretical analysis on autoencoders, LoRA, and sparse coding (paper reading).
+    - title: "Workshop on Algorithm for Students 2026 — Seminar Participant"
+      institution: POSTECH
+      location: Pohang, KR
+      year: Jan 2026
+
+- title: Selected Academic Projects
+  type: time_table
+  contents:
+    - title: "Multi-Agent Reinforcement Learning on a Mario Kart Environment"
+      institution: CS377 Intro to Reinforcement Learning (Instructor — Sungjin Ahn)
+      year: Spring 2026
+      description:
+        - Collaborators - Dongha Gwak, Seojin Yun (School of Computing, KAIST).
+    - title: "Investigating Attack and Defense Strategies on Linear Classification Using Adversarial Training"
+      institution: MAS473 Learning Theory (Instructor — Wooseok Ha)
+      year: Fall 2025
+      description:
+        - Collaborator - Jaemin Lim (School of Computing, KAIST).
+    - title: "Developing a File Transfer Protocol and Securing It via Cryptography"
+      institution: CS161 Computer Security, UC Berkeley (Instructor — Jonah Bedouch)
+      year: Summer 2025
+      description:
+        - Collaborator - Jaemin Lim (School of Computing, KAIST).
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2025 Fall
+      items:
+        - Dean's List, The School of Freshman, KAIST
+    - year: 2025
+      items:
+        - Gold Prize, National University Mathematics Competition (Korean Mathematical Society)
+        - The National Scholarship for Science and Engineering (Korea Student Aid Foundation)
+    - year: 2025 - 2030
+      items:
+        - KAIST Presidential Fellowship
+    - year: 2022 - 2023
+      items:
+        - Hanseong Scholarship for Gifted Students (Hanseong Sonajehan Scholarship Foundation)
+
+- title: Relevant Coursework
+  type: nested_list
+  contents:
+    - title: Mathematics
+      items:
+        - Calculus, Linear Algebra, Differential Equations, Topology
+        - Learning Theory, Mathematical Statistics, Advanced Statistics, Numerical Analysis
+    - title: Computer Science
+      items:
+        - Data Structures, Intro to Algorithms, Computer Architecture, System Programming
+        - Programming Languages, Functional Programming, Formal Language and Automata, Intro to Databases
+        - Intro to Machine Learning, Intro to Reinforcement Learning, Computer Security, Networks
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Programming
+      items:
+        - "Familiar: Python (PyTorch, NumPy), git"
+        - "Novice: C, C++, Java, SQL (Postgres), HTML/CSS"
+    - title: Tools
+      items:
+        - "Familiar: LaTeX (Overleaf/VSCode), Microsoft Office"
+        - "Novice: manim"
+    - title: Languages
+      items:
+        - "Korean (Native), English (TOEFL 112/120, TOEIC 940/990)"
+
+- title: Extracurricular Activities
+  type: time_table
+  contents:
+    - title: Vice President
+      institution: KAIST Vlab (AI Club)
+      year: 2026
+    - title: ML (Math Letter) Editor
+      institution: KAIST Msquare (Mathematics Club)
+      year: 2026
+    - title: Automata Research Group
+      institution: GRASP (Graph Research)
+      year: 2026
