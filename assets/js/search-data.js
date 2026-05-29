@@ -11,39 +11,44 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "CV",
-          description: "",
+          description: "Curriculum vitae of Kangmin Kim — also available as a downloadable PDF.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/CVblog/cv/";
           },
-        },{id: "news-blog-was-built",
-          title: 'Blog was built.',
+        },{id: "news-launched-my-personal-academic-homepage",
+          title: 'Launched my personal academic homepage. 🎉',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/CVblog/projects/1_project/";
-            },},{
+          section: "News",},{id: "news-restructured-my-homepage-added-a-full-html-cv-page-and-tidied-up-the-site-️",
+          title: 'Restructured my homepage — added a full HTML CV page and tidied up...',
+          description: "",
+          section: "News",},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/CVblog/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("/CVblog/assets/pdf/cv.pdf", "_blank");
         },
       },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%6D%6F%6F%6E%6C%69%67%68%74%6B%69%6D@%6B%61%69%73%74.%61%63.%6B%72", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/MoonlightWarrior", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/kangmin-kim-71401431a", "_blank");
         },
       },{
         id: 'social-rss',
@@ -51,20 +56,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("/CVblog/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
