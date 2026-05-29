@@ -7,7 +7,7 @@ first_name: Kangmin
 middle_name:
 last_name: Kim
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Email is the fastest way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal academic homepage of Kangmin Kim, a Computer Science and Mathematical Sciences undergraduate at KAIST interested in the mathematical theory of ML/AI, optimization, and sparse recovery.
 footer_text: >
