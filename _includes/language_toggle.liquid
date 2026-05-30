@@ -1,0 +1,54 @@
+{% comment %}
+  Lightweight EN/KO language toggle.
+  Finds the sibling page sharing the same `ref` in the other language and links to it.
+  Falls back to the other language's home page when no sibling exists.
+{% endcomment %}
+
+{% assign cur_lang = page.lang | default: 'en' %}
+
+{% comment %} Resolve the link target for each language by matching `ref`. {% endcomment %}
+{% assign en_url = '/' %}
+{% assign ko_url = '/ko/' %}
+{% for p in site.pages %}
+  {% if p.ref and p.ref == page.ref %}
+    {% if p.lang == 'ko' %}
+      {% assign ko_url = p.url %}
+    {% elsif p.lang == 'en' or p.lang == nil %}
+      {% assign en_url = p.url %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<li class="toggle-container lang-toggle" title="Language">
+  {% if cur_lang == 'ko' %}
+    <a class="nav-link lang-link" href="{{ en_url | relative_url }}">EN</a>
+    <span class="nav-link lang-link lang-active" aria-current="true">KO</span>
+  {% else %}
+    <span class="nav-link lang-link lang-active" aria-current="true">EN</span>
+    <a class="nav-link lang-link" href="{{ ko_url | relative_url }}">KO</a>
+  {% endif %}
+</li>
+
+<style>
+  .lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .lang-toggle .lang-link {
+    display: inline;
+    padding: 0 0.15rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+  .lang-toggle a.lang-link:hover {
+    color: var(--global-hover-color);
+  }
+  .lang-toggle .lang-active {
+    color: var(--global-theme-color);
+  }
+  .lang-toggle .lang-link + .lang-link {
+    border-left: 1px solid var(--global-divider-color);
+  }
+</style>

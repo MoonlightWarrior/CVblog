@@ -42,15 +42,25 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
+          {% assign cur_lang = page.lang | default: 'en' %}
+          {% assign about_title = 'about' %}
+          {% assign about_url = '/' %}
+          {% for p in site.pages %}
+            {% if p.ref == 'about' %}
+              {% if p.lang == cur_lang or (cur_lang == 'en' and p.lang == nil) %}
+                {% assign about_title = p.title %}
+                {% assign about_url = p.url %}
+              {% endif %}
+            {% elsif p.permalink == '/' and about_title == 'about' %}
+              {% assign about_title = p.title %}
+            {% endif %}
           {% endfor %}
 
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
+          <li class="nav-item {% if page.ref == 'about' or page.permalink == '/' %}active{% endif %}">
+            <a class="nav-link" href="{{ about_url | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' %}
+              {% if page.ref == 'about' or page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
@@ -59,7 +69,7 @@
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
-            {% if p.nav and p.autogen == null %}
+            {% if p.nav and p.autogen == null and (p.lang == cur_lang or p.lang == nil) %}
               {% if p.dropdown %}
                 {% assign has_active_child = false %}
                 {% for child in p.children %}
@@ -127,6 +137,8 @@
             </li>
             {% endcomment %}
           {% endif %}
+          <!-- Language toggle -->
+          {% include language_toggle.liquid %}
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">

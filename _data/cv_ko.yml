@@ -1,0 +1,133 @@
+- title: 일반 정보
+  type: map
+  contents:
+    - name: 성명
+      value: Kangmin Kim (김강민)
+    - name: 소속
+      value: 대한민국 대전
+    - name: 이메일
+      value: moonlightkim@kaist.ac.kr
+    - name: 사용 언어
+      value: "한국어 (모국어), 영어 (TOEFL 112/120, TOEIC 940/990)"
+
+- title: 소개
+  type: list
+  contents:
+    - 저는 KAIST 전산학부(CS)와 수리과학과(MAS)에 재학 중인 학부 3학년 학생입니다. 2030년경 KAIST에서 전산학 학사 학위를 마칠 계획이며, 연구 관심사는 ML/AI 수학적 이론, 최적화, 희소 복원, 설명 가능한 AI, 통계학입니다.
+
+- title: 학력
+  type: time_table
+  contents:
+    - title: 전산학 학사 (수리과학 복수전공)
+      institution: 한국과학기술원 (KAIST)
+      location: 대전, KR
+      year: 2025 - 현재
+      description:
+        - "총 평점(GPA): 4.15"
+        - 국가 이공계 우수 장학금으로 등록금 및 생활비 전액 지원
+        - 군 복무 예정 (2028년경, 변동 가능)
+    - title: 교환학생 프로그램
+      institution: 캘리포니아 대학교 버클리 (UC Berkeley)
+      location: 버클리, CA
+      year: 2025년 6월 - 8월
+      description:
+        - 여름 방문학생; 컴퓨터 보안(CS161) 및 인터넷 아키텍처(CS168) 수강
+        - KAIST 총장장학금으로 등록금 및 생활비 전액 지원
+    - title: 고등학교
+      institution: 한국과학영재학교 (KSA)
+      location: 부산, KR
+      year: 2022 - 2025
+      description:
+        - 과학영재를 위한 과학고등학교
+
+- title: 경력
+  type: time_table
+  contents:
+    - title: "개별연구: 희소성 기반 오토인코더를 통한 사전(Dictionary) 복원"
+      institution: 학부연구생 @ KAIST
+      location: 대전, KR
+      year: 2025년 12월 - 2026년 3월
+      description:
+        - Wooseok Ha 교수님 (KAIST 수리과학과) 지도
+        - 오토인코더, LoRA, 희소 코딩에 대한 이론적 분석 (논문 리뷰)
+    - title: 학생을 위한 알고리즘 워크숍 2026 — 세미나 참가
+      institution: POSTECH
+      location: 포항, KR
+      year: 2026년 1월
+
+- title: 주요 학술 프로젝트
+  type: time_table
+  contents:
+    - title: 마리오 카트 환경에서의 다중 에이전트 강화학습
+      institution: CS377 강화학습 입문 (담당 교수 — Sungjin Ahn)
+      year: 2026 봄학기
+      description:
+        - 협업 — Dongha Gwak, Seojin Yun (KAIST 전산학부)
+    - title: 적대적 학습을 활용한 선형 분류 공격·방어 전략 연구
+      institution: MAS473 학습 이론 (담당 교수 — Wooseok Ha)
+      year: 2025 가을학기
+      description:
+        - 협업 — Jaemin Lim (KAIST 전산학부)
+    - title: 파일 전송 프로토콜 개발 및 암호학 기반 보안 구현
+      institution: CS161 컴퓨터 보안, UC Berkeley (담당 교수 — Jonah Bedouch)
+      year: 2025 여름학기
+      description:
+        - 협업 — Jaemin Lim (KAIST 전산학부)
+
+- title: 수상 및 영예
+  type: time_table
+  contents:
+    - year: 2025 가을
+      items:
+        - 학장 표창 (Dean's List), KAIST 새내기과정학부
+    - year: 2025
+      items:
+        - 전국 대학생 수학경시대회 금상 (대한수학회)
+        - 국가 이공계 우수 장학금 (한국장학재단)
+    - year: 2025 - 2030
+      items:
+        - KAIST 총장장학금
+    - year: 2022 - 2023
+      items:
+        - 영재 장학금 (Hanseong Sonajehan Scholarship Foundation)
+
+- title: 수강 과목
+  type: nested_list
+  contents:
+    - title: 수학 (Mathematics)
+      items:
+        - 미적분학, 선형대수학, 미분방정식, 위상수학
+        - 학습이론, 수리통계학, 고급통계학, 수치해석
+    - title: 컴퓨터과학 (Computer Science)
+      items:
+        - 자료구조, 알고리즘 입문, 컴퓨터 구조, 시스템 프로그래밍
+        - 프로그래밍 언어, 함수형 프로그래밍, 형식언어 및 오토마타, 데이터베이스 입문
+        - 기계학습 입문, 강화학습 입문, 컴퓨터 보안, 네트워크
+
+- title: 기술
+  type: nested_list
+  contents:
+    - title: 프로그래밍 (Programming)
+      items:
+        - "능숙: Python (PyTorch, NumPy), git"
+        - "초급: C, C++, Java, SQL (Postgres), HTML/CSS"
+    - title: 도구 (Tools)
+      items:
+        - "능숙: LaTeX (Overleaf/VSCode), Microsoft Office"
+        - "초급: manim"
+    - title: 언어 (Languages)
+      items:
+        - "한국어 (모국어), 영어 (TOEFL 112/120, TOEIC 940/990)"
+
+- title: 대외 활동
+  type: time_table
+  contents:
+    - title: 부회장
+      institution: KAIST Vlab (AI 동아리)
+      year: 2026
+    - title: ML (Math Letter) 에디터
+      institution: KAIST Msquare (수학 동아리)
+      year: 2026
+    - title: 오토마타 연구 그룹
+      institution: GRASP (그래프 연구)
+      year: 2026
