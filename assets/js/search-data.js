@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/CVblog/";
     },
-  },{id: "nav-cv",
+  },{id: "nav-이력서",
+          title: "이력서",
+          description: "김강민의 이력서입니다 (PDF로도 내려받을 수 있습니다).",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/CVblog/ko/cv/";
+          },
+        },{id: "nav-cv",
           title: "CV",
           description: "Curriculum vitae of Kangmin Kim — also available as a downloadable PDF.",
           section: "Navigation",
