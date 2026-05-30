@@ -1,0 +1,202 @@
+{% comment %}
+  Aesthetic enhancements: reveal-on-scroll, social-icon hover lift,
+  section accent bars, and a typed rotating tagline.
+  CSS/JS are inline so PurgeCSS (which only processes assets/css) keeps them.
+{% endcomment %}
+
+<style>
+  /* Reveal on scroll (only active once JS adds .js-reveal) */
+  .js-reveal .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+  .js-reveal .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Social icon hover lift */
+  .social .contact-icons a {
+    display: inline-block;
+    transition:
+      transform 0.2s ease,
+      color 0.2s ease;
+  }
+  .social .contact-icons a:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Section accent bars */
+  .post article > h2 {
+    border-left: 4px solid var(--global-theme-color);
+    padding-left: 0.6rem;
+    line-height: 1.15;
+  }
+  .cv .card .card-title {
+    border-left: 4px solid var(--global-theme-color);
+    padding-left: 0.6rem;
+  }
+
+  /* Typed tagline */
+  .typed-tagline {
+    font-family: monospace;
+    color: var(--global-text-color-light);
+    margin-bottom: 0.85rem;
+    min-height: 1.3em;
+    font-size: 0.95rem;
+  }
+  .typed-cursor {
+    color: var(--global-theme-color);
+    font-weight: bold;
+    animation: typed-blink 1s step-end infinite;
+  }
+  @keyframes typed-blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Favorite equation (static fallback) */
+  .fav-equation {
+    margin-top: 1.35rem;
+    text-align: center;
+    overflow-x: auto;
+  }
+  .fav-equation mjx-container {
+    margin: 0 auto;
+  }
+  .fav-equation-caption {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    margin-top: 0.3rem;
+  }
+
+  /* Optimizer evolution animation (manim) */
+  .optimizer-anim {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .optimizer-anim video {
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    border-radius: 8px;
+  }
+  .optimizer-anim-caption {
+    display: block;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--global-text-color-light);
+    margin-top: 0.1rem;
+  }
+  /* Nudge the animation block right to sit under the bio on wider screens */
+  @media (min-width: 768px) {
+    .optimizer-anim {
+      margin-right: 0;
+      margin-left: auto;
+      padding-right: 4%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .js-reveal .reveal {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none;
+    }
+    .typed-cursor {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function initTyped() {
+      var nodes = document.querySelectorAll(".typed-tagline");
+      for (var i = 0; i < nodes.length; i++) {
+        (function (el) {
+          var phrases = (el.getAttribute("data-phrases") || "").split("|").filter(Boolean);
+          var target = el.querySelector(".typed-text");
+          if (!target || !phrases.length) return;
+          if (reduce) {
+            target.textContent = phrases[0];
+            return;
+          }
+          var pi = 0,
+            ci = 0,
+            deleting = false;
+          function tick() {
+            var word = phrases[pi];
+            if (!deleting) {
+              target.textContent = word.slice(0, ++ci);
+              if (ci === word.length) {
+                deleting = true;
+                return setTimeout(tick, 1700);
+              }
+            } else {
+              target.textContent = word.slice(0, --ci);
+              if (ci === 0) {
+                deleting = false;
+                pi = (pi + 1) % phrases.length;
+              }
+            }
+            setTimeout(tick, deleting ? 45 : 95);
+          }
+          tick();
+        })(nodes[i]);
+      }
+    }
+
+    function initReveal() {
+      var els = document.querySelectorAll(".post-header, .profile, .clearfix, article > h2, .social, .cv .card");
+      if (!els.length) return;
+      if (reduce || !("IntersectionObserver" in window)) {
+        for (var i = 0; i < els.length; i++) {
+          els[i].classList.add("reveal", "is-visible");
+        }
+        return;
+      }
+      document.body.classList.add("js-reveal");
+      for (var j = 0; j < els.length; j++) {
+        els[j].classList.add("reveal");
+      }
+      var obs = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-visible");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
+      );
+      for (var k = 0; k < els.length; k++) {
+        obs.observe(els[k]);
+      }
+    }
+
+    function init() {
+      initTyped();
+      initReveal();
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", init);
+    } else {
+      init();
+    }
+  })();
+</script>

@@ -12,3 +12,7 @@ node_modules/
 vendor
 .idea
 .venv
+
+# Manim render cache (keep source .py, ignore heavy media)
+_manim_build/media/
+_manim_build/__pycache__/
