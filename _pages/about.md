@@ -2,6 +2,8 @@
 layout: about
 title: about
 permalink: /
+lang: en
+ref: about
 subtitle: <a href='https://kaist.ac.kr/kr/'>KAIST</a> CS/MAS Undergraduate
 
 profile:
@@ -24,15 +26,35 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a third-year undergraduate student in Computer Science and Mathematical Sciences at KAIST. I'm planning to complete my Bachelor's in CS at KAIST around 2030. My research interests include:
+I am a third-year undergraduate student in Computer Science and Mathematical Sciences at KAIST. I'm planning to complete my Bachelor's in CS at KAIST around 2030, with research interests across the mathematical foundations of machine learning.
 
-<br>
-• ML/AI mathematical theory  
+<div class="research-interests">
+  <span>ML/AI Mathematical Theory</span>
+  <span>Optimization</span>
+  <span>Sparse Recovery</span>
+  <span>Explainable AI</span>
+  <span>Statistics</span>
+</div>
 
-• Optimization  
-
-• Sparse Recovery  
-
-• Explainable AI  
-
-• Statistics
+<style>
+  .research-interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .research-interests span {
+    display: inline-block;
+    padding: 0.32rem 0.75rem;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    line-height: 1.1;
+    color: var(--global-theme-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  .research-interests span:hover {
+    background-color: var(--global-theme-color);
+    color: var(--global-hover-text-color);
+  }
+</style>
