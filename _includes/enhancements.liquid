@@ -29,15 +29,23 @@
     transform: translateY(-5px);
   }
 
-  /* Section accent bars */
-  .post article > h2 {
-    border-left: 4px solid var(--global-theme-color);
-    padding-left: 0.6rem;
+  /* Section accent bars (gradient, rounded) */
+  .post article > h2,
+  .cv .card .card-title {
+    position: relative;
+    padding-left: 0.65rem;
     line-height: 1.15;
   }
-  .cv .card .card-title {
-    border-left: 4px solid var(--global-theme-color);
-    padding-left: 0.6rem;
+  .post article > h2::before,
+  .cv .card .card-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5%;
+    bottom: 5%;
+    width: 4px;
+    border-radius: 2px;
+    background: var(--global-theme-gradient, var(--global-theme-color));
   }
 
   /* Typed tagline */
@@ -90,7 +98,8 @@
     width: 100%;
     max-width: 460px;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(var(--global-theme-color-rgb), 0.14);
   }
   .optimizer-anim-caption {
     display: block;
@@ -106,6 +115,80 @@
       margin-left: auto;
       padding-right: 4%;
     }
+  }
+
+  /* Page title: moonlight gradient text (matches the main blog) */
+  .post-header .post-title {
+    background: var(--global-theme-gradient, var(--global-theme-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 2px;
+  }
+  /* the base stylesheet colors span/em directly; let them inherit the clip */
+  .post-header .post-title span,
+  .post-header .post-title em {
+    color: inherit;
+  }
+
+  /* Profile photo: accent ring + soft glow */
+  .profile img {
+    box-shadow:
+      0 0 0 3px rgba(var(--global-theme-color-rgb), 0.45),
+      0 10px 26px rgba(var(--global-theme-color-rgb), 0.2) !important;
+  }
+
+  /* News: monospace accent dates and row hover tint */
+  .news table th {
+    color: var(--global-theme-color);
+    font-family: monospace;
+    font-size: 0.85rem;
+  }
+  .news table tr {
+    transition: background-color 0.15s ease;
+  }
+  .news table tr:hover {
+    background-color: rgba(var(--global-theme-color-rgb), 0.07);
+  }
+
+  /* Fix: Bootstrap hardcodes .table color to #212529, which is invisible
+     on the dark card background. Follow the theme instead. */
+  .table {
+    color: var(--global-text-color);
+  }
+
+  /* CV: cards lift on hover, rounded with soft shadows */
+  .cv .card {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      border-color 0.2s ease;
+  }
+  .cv .card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(var(--global-theme-color-rgb), 0.35);
+    box-shadow: 0 10px 26px rgba(var(--global-theme-color-rgb), 0.12);
+  }
+
+  /* CV: gradient year badges and rounded link buttons */
+  .cv .badge {
+    background: var(--global-theme-gradient, var(--global-theme-color)) !important;
+    color: var(--global-hover-text-color) !important;
+    border-radius: 999px;
+    padding: 0.4em 0.8em;
+    letter-spacing: 0.3px;
+  }
+  a.btncv {
+    border-radius: 0.5rem;
+  }
+
+  /* Back to top: accent gradient */
+  #back-to-top {
+    background: var(--global-theme-gradient, var(--global-theme-color));
+    color: var(--global-hover-text-color);
   }
 
   @media (prefers-reduced-motion: reduce) {
