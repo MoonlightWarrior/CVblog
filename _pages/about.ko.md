@@ -31,7 +31,7 @@ latest_posts:
 
 <p class="typed-tagline" data-phrases="ML/AI 수학적 이론|최적화|희소 복원|설명 가능한 AI|통계학">&gt;&nbsp;<span class="typed-text"></span><span class="typed-cursor">&#9608;</span></p>
 
-저는 KAIST 전산학부(CS)와 수리과학과(MAS)에 재학 중인 학부 3학년 학생입니다. 2030년경 KAIST에서 전산학 학사 학위를 마칠 계획이며, 기계학습의 수학적 기초를 중심으로 연구에 관심을 두고 있습니다.
+저는 KAIST 전산학부(CS)와 수리과학과(MAS)에 재학 중인 학부 3학년 학생이며, 기계학습의 수학적 기초를 중심으로 연구에 관심을 두고 있습니다. 2030년 KAIST에서 전산학 학사 학위를 마칠 예정이며(병역 의무 기간 포함), 이후 기계학습 이론 분야에서 박사 과정에 진학할 계획입니다.
 
 <div class="research-interests">
   <span>ML/AI 수학적 이론</span>

@@ -3,17 +3,17 @@
   contents:
     - name: 성명
       value: Kangmin Kim (김강민)
-    - name: 소속
+    - name: 위치
       value: 대한민국 대전
     - name: 이메일
       value: moonlightkim@kaist.ac.kr
     - name: 사용 언어
-      value: "한국어 (모국어), 영어 (TOEFL 112/120, TOEIC 940/990)"
+      value: "한국어 (모국어), 영어 (능숙 — TOEFL 112/120, TOEIC 940/990)"
 
 - title: 소개
   type: list
   contents:
-    - 저는 KAIST 전산학부(CS)와 수리과학과(MAS)에 재학 중인 학부 3학년 학생입니다. 2030년경 KAIST에서 전산학 학사 학위를 마칠 계획이며, 연구 관심사는 ML/AI 수학적 이론, 최적화, 희소 복원, 설명 가능한 AI, 통계학입니다.
+    - 저는 KAIST 전산학부(CS)와 수리과학과(MAS)에 재학 중인 학부 3학년 학생입니다. 2030년 KAIST에서 전산학 학사 학위를 마칠 예정이며(병역 의무 기간 포함), 이후 기계학습 이론 분야에서 박사 과정에 진학할 계획입니다. 연구 관심사는 ML/AI 수학적 이론, 최적화, 희소 복원, 설명 가능한 AI, 통계학입니다.
 
 - title: 학력
   type: time_table
@@ -23,7 +23,7 @@
       location: 대전, KR
       year: 2025 - 현재
       description:
-        - "총 평점(GPA): 4.15"
+        - "총 평점(GPA): 4.13/4.3"
         - 국가 이공계 우수 장학금으로 등록금 및 생활비 전액 지원
         - 군 복무 예정 (2028년경, 변동 가능)
     - title: 교환학생 프로그램
@@ -38,7 +38,7 @@
       location: 부산, KR
       year: 2022 - 2025
       description:
-        - 과학영재를 위한 과학고등학교
+        - 과학영재를 위한 영재학교
 
 - title: 경력
   type: time_table
@@ -48,12 +48,23 @@
       location: 대전, KR
       year: 2025년 12월 - 2026년 3월
       description:
-        - Wooseok Ha 교수님 (KAIST 수리과학과) 지도
+        - <a href="https://haywse.github.io/">Wooseok Ha 교수님</a> (KAIST 수리과학과) 지도
         - 오토인코더, LoRA, 희소 코딩에 대한 이론적 분석 (논문 리뷰)
-    - title: 학생을 위한 알고리즘 워크숍 2026 — 세미나 참가
+    - title: "Workshop on Algorithm for Students 2026 — 세미나 참가"
       institution: POSTECH
       location: 포항, KR
       year: 2026년 1월
+      linkitems:
+        - link: https://sites.google.com/yonsei.ac.kr/was2026/home
+          linkname: 홈페이지
+
+- title: 강의 경력
+  type: time_table
+  contents:
+    - year: 2026 가을
+      items:
+        - CS322 오토마타 이론 개론 — 조교(TA), KAIST
+        - MAS201 상미분방정식 개론 — 헬프데스크, KAIST
 
 - title: 주요 학술 프로젝트
   type: time_table
@@ -77,9 +88,12 @@
 - title: 수상 및 영예
   type: time_table
   contents:
+    - year: 2026 가을
+      items:
+        - 우등생 프로그램 (Honors Program), KAIST
     - year: 2025 가을
       items:
-        - 학장 표창 (Dean's List), KAIST 새내기과정학부
+        - Dean's List, KAIST 새내기과정학부
     - year: 2025
       items:
         - 전국 대학생 수학경시대회 금상 (대한수학회)
@@ -89,7 +103,7 @@
         - KAIST 총장장학금
     - year: 2022 - 2023
       items:
-        - 영재 장학금 (Hanseong Sonajehan Scholarship Foundation)
+        - 한성 영재 장학금 (Hanseong Sonajehan Scholarship Foundation)
 
 - title: 수강 과목
   type: nested_list
@@ -109,22 +123,25 @@
   contents:
     - title: 프로그래밍 (Programming)
       items:
-        - "능숙: Python (PyTorch, NumPy), git"
+        - "익숙함: Python (PyTorch, NumPy), git"
         - "초급: C, C++, Java, SQL (Postgres), HTML/CSS"
     - title: 도구 (Tools)
       items:
-        - "능숙: LaTeX (Overleaf/VSCode), Microsoft Office"
+        - "익숙함: LaTeX (Overleaf/VSCode), Microsoft Office"
         - "초급: manim"
     - title: 언어 (Languages)
       items:
-        - "한국어 (모국어), 영어 (TOEFL 112/120, TOEIC 940/990)"
+        - "한국어 (모국어), 영어 (능숙 — TOEFL 112/120, TOEIC 940/990)"
 
 - title: 대외 활동
   type: time_table
   contents:
+    - title: 회장
+      institution: KAIST Vlab (AI 동아리)
+      year: 2026 가을
     - title: 부회장
       institution: KAIST Vlab (AI 동아리)
-      year: 2026
+      year: 2026 봄
     - title: ML (Math Letter) 에디터
       institution: KAIST Msquare (수학 동아리)
       year: 2026

@@ -30,7 +30,7 @@ latest_posts:
 
 <p class="typed-tagline" data-phrases="ML/AI Mathematical Theory|Optimization|Sparse Recovery|Explainable AI|Statistics">&gt;&nbsp;<span class="typed-text"></span><span class="typed-cursor">&#9608;</span></p>
 
-I am a third-year undergraduate student in Computer Science and Mathematical Sciences at KAIST. I'm planning to complete my Bachelor's in CS at KAIST around 2030, with research interests across the mathematical foundations of machine learning.
+I am a third-year undergraduate student in Computer Science and Mathematical Sciences at KAIST, with research interests across the mathematical foundations of machine learning. I expect to complete my B.S. in 2030 (including mandatory military service) and plan to pursue a Ph.D. in machine learning theory.
 
 <div class="research-interests">
   <span>ML/AI Mathematical Theory</span>

@@ -8,12 +8,12 @@
     - name: Email
       value: moonlightkim@kaist.ac.kr
     - name: Languages
-      value: "Korean (Native), English (TOEFL 112/120, TOEIC 940/990)"
+      value: "Korean (Native), English (Highly Proficient — TOEFL 112/120, TOEIC 940/990)"
 
 - title: Profile
   type: list
   contents:
-    - I am a third-year undergraduate student in Computer Science and Mathematical Sciences at KAIST, planning to complete my Bachelor's in CS at KAIST around 2030. My research interests include ML/AI mathematical theory, optimization, sparse recovery, explainable AI, and statistics.
+    - I am a third-year undergraduate student in Computer Science and Mathematical Sciences at KAIST. I expect to complete my B.S. in 2030 (including mandatory military service) and plan to pursue a Ph.D. in machine learning theory. My research interests include ML/AI mathematical theory, optimization, sparse recovery, explainable AI, and statistics.
 
 - title: Education
   type: time_table
@@ -23,7 +23,7 @@
       location: Daejeon, KR
       year: 2025 - Present
       description:
-        - "Total GPA: 4.15"
+        - "Total GPA: 4.13/4.3"
         - Tuition and stipend fully covered by the National Science and Engineering Excellence Scholarship.
         - Military service planned around 2028 (may be later).
     - title: Exchange Student Program
@@ -48,12 +48,23 @@
       location: Daejeon, KR
       year: Dec 2025 - Mar 2026
       description:
-        - Advised by Prof. Wooseok Ha (Dept. of Mathematical Sciences, KAIST).
+        - Advised by <a href="https://haywse.github.io/">Prof. Wooseok Ha</a> (Dept. of Mathematical Sciences, KAIST).
         - Theoretical analysis on autoencoders, LoRA, and sparse coding (paper reading).
     - title: "Workshop on Algorithm for Students 2026 — Seminar Participant"
       institution: POSTECH
       location: Pohang, KR
       year: Jan 2026
+      linkitems:
+        - link: https://sites.google.com/yonsei.ac.kr/was2026/home
+          linkname: Homepage
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - year: 2026 Fall
+      items:
+        - CS322 Introduction to Automata Theory — Teaching Assistant, KAIST
+        - MAS201 Introduction to Ordinary Differential Equations — Help Desk, KAIST
 
 - title: Selected Academic Projects
   type: time_table
@@ -77,6 +88,9 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2026 Fall
+      items:
+        - Honors Program, KAIST
     - year: 2025 Fall
       items:
         - Dean's List, The School of Freshman, KAIST
@@ -117,14 +131,17 @@
         - "Novice: manim"
     - title: Languages
       items:
-        - "Korean (Native), English (TOEFL 112/120, TOEIC 940/990)"
+        - "Korean (Native), English (Highly Proficient — TOEFL 112/120, TOEIC 940/990)"
 
 - title: Extracurricular Activities
   type: time_table
   contents:
+    - title: President
+      institution: KAIST Vlab (AI Club)
+      year: 2026 Fall
     - title: Vice President
       institution: KAIST Vlab (AI Club)
-      year: 2026
+      year: 2026 Spring
     - title: ML (Math Letter) Editor
       institution: KAIST Msquare (Mathematics Club)
       year: 2026
